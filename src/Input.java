@@ -1,26 +1,24 @@
 import java.util.Scanner;
-public class Main {
+public class Input {
     public static void main(String[] args) {
         Scanner keyboard =new Scanner(System.in);
 
         System.out.println("what is the value of pi");
-        double pival = keyboard.nextDouble();
+        double pi_value = keyboard.nextDouble();
 
-        //cleaing the buffer
+        //clearing the buffer
         keyboard.nextLine();
-
 
         System.out.println("what is your name");
         String name = keyboard.nextLine();
 
         System.out.println("what is your age");
         int age = keyboard.nextInt();
-
-
+        keyboard.nextByte();
 
         System.out.println("Good morning " + name);
         System.out.println("you are " + age + " years old");
-        System.out.println(pival);
+        System.out.println(pi_value);
 
     }
 }
